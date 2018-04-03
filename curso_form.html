@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário do curso</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="menu_sup">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="#">Cursos</a></li>
+			<li><a href="mobilidade.html">Mobilidade</a></li>
+			<li><a href="documentos.html">Documentos</a></li>
+			<li><a href="#">Mapa da UFAL</a></li>
+			<li><a href="instalacoes.html">Instalações</a></li>
+		</ul>
+	</div>
+	<div id="cabecalho-pagina">
+		<h1>UFALWIKI</h1>
+	</div>
+	<div id="pagina">
+		<form id="formulario_curso" onsubmit="le_curso()">
+			<h2>Formulário de identificação de usuário</h2>
+			<input type="text" name="nome_usuario" placeholder="Digite seu nome"/><br>
+			<input type="number" name="idade" placeholder="Digite sua idade"/><br>
+			<input type="text" name="curso" placeholder="Digite o curso"/>
+			<input type="submit" name="envia_dados" class="submit">
+		</form>
+		<script type="text/javascript" src="js/troca_dados.js"></script>
+	</div>
+</body>
+</html>
