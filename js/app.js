@@ -1,4 +1,3 @@
-
 function valor_almoco() {
 	quantidade = parseInt(prompt("Insira a quantidade de almocos",""))
 
@@ -70,4 +69,15 @@ function xerox() {
 	}
 
 	/* colocar comentario sobre principais lugares de xerox*/
+}
+
+function deci_bin(bin) {
+	decimal = parseInt(prompt("Digite um número decimal inteiro a ser convertido", ""));
+	while(decimal > 2){
+		bin += parseInt(decimal % 2);
+		decimal /= 2;
+	}
+	bin += parseInt(decimal % 2);
+	bin += parseInt(decimal / 2);
+	alert(bin.split('').reverse().join(''));
 }
