@@ -81,3 +81,108 @@ function deci_bin(bin) {
 	bin += parseInt(decimal / 2);
 	alert(bin.split('').reverse().join(''));
 }
+
+function bigImg(x) {
+    x.style.height = "700px";
+    x.style.width = "700px";
+}
+
+function normalImg(x) {
+    x.style.height = "60px";
+    x.style.width = "60px";
+}
+
+function bit_byte()
+{
+	decisao = parseInt(prompt("Insira 1 para converter de bite para byte ou 2 para a operação inversa"))
+
+	if (decisao == 1)
+	{
+		quant = parseInt(prompt("Insira a quantidade de bits:",""))
+
+		alert("A quantidade de bytes é de: "+quant / 8)
+	}
+
+	else if (decisao == 2)
+	{
+		quant = parseInt(prompt("Insira a quantidade de bytes:",""))
+
+		alert("A quantidade de bytes é de: "+quant * 8)
+	}
+}
+
+function byte_kilo()
+{
+	decisao = parseInt(prompt("Insira 1 para converter de byte para kilobyte ou 2 para a operação inversa"))
+
+	if (decisao == 1)
+	{
+		quant = parseInt(prompt("Insira a quantidade de bytes:",""))
+
+		alert("A quantidade de kilobytes é de: "+quant / 1024)
+	}
+
+	else if (decisao == 2)
+	{
+		quant = parseInt(prompt("Insira a quantidade de kilobytes:",""))
+
+		alert("A quantidade de bytes é de: "+quant * 1024)
+	}
+}
+
+function kilo_mega()
+{
+	decisao = parseInt(prompt("Insira 1 para converter de kilobyte para megabyte ou 2 para a operação inversa"))
+
+	if (decisao == 1)
+	{
+		quant = parseInt(prompt("Insira a quantidade de kilobytes:",""))
+
+		alert("A quantidade de megabytes é de: "+quant / 1024)
+	}
+
+	else if (decisao == 2)
+	{
+		quant = parseInt(prompt("Insira a quantidade de megabytes:",""))
+
+		alert("A quantidade de kilobytes é de: "+quant * 1024)
+	}
+}
+
+function mega_giga()
+{
+	decisao = parseInt(prompt("Insira 1 para converter de megabyte para gigabyte ou 2 para a operação inversa"))
+
+	if (decisao == 1)
+	{
+		quant = parseInt(prompt("Insira a quantidade de megabytes:",""))
+
+		alert("A quantidade de gigabytes é de: "+quant / 1024)
+	}
+
+	else if (decisao == 2)
+	{
+		quant = parseInt(prompt("Insira a quantidade de gigabytes:",""))
+
+		alert("A quantidade de megabytes é de: "+quant * 1024)
+	}
+}
+
+function giga_tera()
+{
+	decisao = parseInt(prompt("Insira 1 para converter de gigabyte para terabyte ou 2 para a operação inversa"))
+
+	if (decisao == 1)
+	{
+		quant = parseInt(prompt("Insira a quantidade de gigabytes:",""))
+
+		alert("A quantidade de terabytes é de: "+quant / 1024)
+	}
+
+	else if (decisao == 2)
+	{
+		quant = parseInt(prompt("Insira a quantidade de terabytes:",""))
+
+		alert("A quantidade de gigabytes é de: "+quant * 1024)
+	}
+}
