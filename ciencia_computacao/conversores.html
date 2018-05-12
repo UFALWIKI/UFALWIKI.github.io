@@ -20,18 +20,36 @@
 		<h1>Conversores:</h1>
 	</div>
 	<div id="pagina">
-		<h3>Conversores de bytes:</h3><br>
+
 		<form>
-			<input type="button" value="bit  <-->  byte" onclick="bit_byte()"><br><br>
-
-			<input type="button" value="byte  <-->  kilobyte" onclick="byte_kilo()"><br><br>
-
-			<input type="button" value="kilobyte  <-->  megabyte" onclick="kilo_mega()"><br><br>
-
-			<input type="button" value="megabyte  <-->  gigabyte" onclick="mega_giga()"><br><br>
-
-			<input type="button" value="gigabyte  <--> terabyte" onclick="giga_tera()"><br><br>
-
+			<table>
+				<tr>
+					<th class="t-esq"><h3>Conversores de bytes:</h3></th>
+					<th>----------</th>
+					<th><h3>Operações com binários:</h3><th>
+				</tr>
+				<tr>
+					<td class="t-esq"><input type="button" value="bit  <-->  byte" onclick="bit_byte()"></td>
+					<td></td>
+					<td><input type="button" value="binário <--> decimal" onclick="bin_deci()"></td>
+				</tr>
+				<tr>
+					<td class="t-esq"><input type="button" value="byte  <-->  kilobyte" onclick="byte_kilo()"></td>
+					<td></td>
+					<td><input type="button" value="decimal <--> binário" onclick="deci_bin()"></td>
+				</tr>
+				<tr>
+					<td class="t-esq"><input type="button" value="kilobyte  <-->  megabyte" onclick="kilo_mega()"></td>
+					<td></td>
+					<td><input type="button" value="somador de números binários" onclick=""></td>
+				</tr>
+				<tr>
+					<td class="t-esq"><input type="button" value="megabyte  <-->  gigabyte" onclick="mega_giga()"></td>
+				</tr>
+				<tr>
+					<td class="t-esq"><input type="button" value="gigabyte  <--> terabyte" onclick="giga_tera()"></td>
+				</tr>
+			</table>
 		</form>
 	</div>
 	<script src="../js/app.js"></script>

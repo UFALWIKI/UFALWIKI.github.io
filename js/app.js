@@ -71,15 +71,41 @@ function xerox() {
 	/* colocar comentario sobre principais lugares de xerox*/
 }
 
-function deci_bin(bin) {
+function deci_bin() {
 	decimal = parseInt(prompt("Digite um número decimal inteiro a ser convertido", ""));
+	pos = 0;
+	bin = [];
 	while(decimal > 2){
-		bin += parseInt(decimal % 2);
+		bin[pos] = parseInt(decimal % 2);
 		decimal /= 2;
+		pos++;
 	}
-	bin += parseInt(decimal % 2);
-	bin += parseInt(decimal / 2);
-	alert(bin.split('').reverse().join(''));
+	bin[pos] = parseInt(decimal % 2);
+	pos++;
+	bin[pos] = parseInt(decimal / 2);
+	pos++;
+	bin[pos] = '\0';
+	bin_aux = "";
+	for(i = pos-1; i >= 0; i--){
+		bin_aux += bin[i];
+		console.log(bin[i]);
+	}
+	alert(bin_aux);
+}
+
+function bin_deci() {
+	bin = prompt("Digite um número binário para ser convertido para decimal inteiro", "");
+	pos = bin.length-1;
+	soma = 0;
+	cont = 0;
+	while(pos >= 0) {
+		if(bin[pos] == '1'){
+			soma += Math.pow(2, cont);
+		}
+		cont++;
+		pos--;
+	}
+	alert(soma);
 }
 
 function bigImg(x) {
