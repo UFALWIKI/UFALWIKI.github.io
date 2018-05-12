@@ -71,8 +71,7 @@ function xerox() {
 	/* colocar comentario sobre principais lugares de xerox*/
 }
 
-function deci_bin() {
-	decimal = parseInt(prompt("Digite um número decimal inteiro a ser convertido", ""));
+function decimal_b(decimal) {
 	pos = 0;
 	bin = [];
 	while(decimal > 2){
@@ -88,13 +87,11 @@ function deci_bin() {
 	bin_aux = "";
 	for(i = pos-1; i >= 0; i--){
 		bin_aux += bin[i];
-		console.log(bin[i]);
 	}
-	alert(bin_aux);
+	return bin_aux;
 }
 
-function bin_deci() {
-	bin = prompt("Digite um número binário para ser convertido para decimal inteiro", "");
+function bin_decimal(bin) {
 	pos = bin.length-1;
 	soma = 0;
 	cont = 0;
@@ -105,7 +102,26 @@ function bin_deci() {
 		cont++;
 		pos--;
 	}
-	alert(soma);
+	return soma;
+}
+
+function deci_bin() {
+	decimal = parseInt(prompt("Digite um número decimal inteiro a ser convertido", ""));
+	alert(decimal_b(decimal));
+}
+
+function bin_deci() {
+	bin = prompt("Digite um número binário para ser convertido para decimal inteiro", "");
+	alert(bin_decimal(bin));
+}
+
+function somador_bin() {
+	bin1 = prompt("Digite o primeiro binário","");
+	bin2 = prompt("Digite o segundo binário", "");
+	b1 = bin_decimal(bin1);
+	b2 = bin_decimal(bin2);
+	soma = parseInt(b1) + parseInt(b2);
+	alert(decimal_b(soma));
 }
 
 function bigImg(x) {
